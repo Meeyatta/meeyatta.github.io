@@ -1,0 +1,134 @@
+/* Mobile-first */
+
+html[lang="en"] .lang-ru,
+html:not([lang]) .lang-ru {
+  display: none;
+}
+
+html[lang="ru"] .lang-en {
+  display: none;
+}
+
+
+body 
+{
+    background-color: whitesmoke;
+}
+
+h1
+{
+    text-align: center;
+    font-family: American TextC;
+}
+
+p, h2
+{
+    white-space: pre;
+    font-family: Garamond Premier Pro;
+}
+
+/* #region Side panel */
+.sidenav 
+{
+    height: 100%; 
+    width: 15%;
+    position: fixed; 
+    z-index: 1; 
+    top: 0;
+    left: 0;
+    background-color: #111;
+    padding-top: 20px;
+    
+    word-wrap: break-word; 
+    overflow-wrap: normal;
+    overflow-x: hidden; 
+}
+
+.sidenav a 
+{
+    padding: 1% 5% 1% 5%;
+    text-decoration: none;
+    color: rgb(162, 158, 158);
+    display: block;
+    
+}
+
+.sidenav a:hover 
+{
+    color: #f1f1f1;
+}
+
+.sidenav-element
+{
+    margin-top: 30%;
+    font-size: 20px;
+    white-space: pre-wrap;
+}
+
+.sidenav-subelement
+{
+    margin-top: 10%;
+    font-size: 18px;
+    white-space: pre-wrap;
+}
+
+.language-buttons 
+{
+    margin-top: 40%;
+    font-size: 20px;
+}
+
+.button-english
+{
+    margin-top: 2%;
+}
+/* #endregion */
+
+/* #region Global map */
+.globalMap 
+{
+    display: flex;
+    align-items: flex-start; /* Aligns items to the top */
+    gap: 20px; /* Optional space between image and list */
+}
+.globalMap img 
+{
+    flex-shrink: 0; /* Keeps the image from shrinking */
+  width: 70%; /* Set a fixed width or max-width for the image */
+  height: auto;
+}
+.globalMap-AllianceList 
+{
+    flex: 1; /* Makes the list take up the remaining available width */
+    margin: 0;
+    padding: 0;
+}
+/* #endregion */
+
+.main 
+{
+    margin-left: 20%;
+    padding: 0px 5px;
+}
+
+.intro-pre-text 
+{
+    max-width: 10%;
+    overflow-wrap: break-word;
+}
+
+/* desktop */
+@media screen and (min-device-width: 1500px) 
+{
+  .sidenav 
+  {
+    width: 10%;
+    padding-top: 15px;
+  }
+
+  .main 
+  {
+    margin-left: 10%;
+    padding: 0px 10px;
+  }
+}
